@@ -102,3 +102,10 @@ dist
 
 # TernJS port file
 .tern-port
+/.idea/
+/Flashcards/Design/
+/Flashcards/On the flip side/
+/Flashcards/Setting up/
+/Flashcards/lesson-info.yaml
+/course-info.yaml
+/course-remote-info.yaml
