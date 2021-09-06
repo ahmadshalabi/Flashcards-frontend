@@ -1,0 +1,35 @@
+body {
+    background-image: url(../images/world.png);
+    background-size: 100vw 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.quiz-area {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    color: dimgray;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card-item {
+    background-color: #FFF0DF;
+    border-radius: 1.25em;
+    flex-basis: 12em;
+    height: 12em;
+    margin: .5em 0;
+}
+
+.question {
+    color: #FF900D;
+    font-weight: bold;
+    text-align: center;
+}
