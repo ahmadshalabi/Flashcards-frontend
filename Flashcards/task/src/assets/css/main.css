@@ -18,18 +18,56 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 50%;
 }
 
 .card-item {
-    background-color: #FFF0DF;
-    border-radius: 1.25em;
-    flex-basis: 12em;
-    height: 12em;
+    border-radius: 1em;
+    flex-basis: 16em;
+    height: 16em;
     margin: .5em 0;
+    perspective: 100vw;
 }
 
-.question {
+.card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1s linear;
+    transform-style: preserve-3d;
+    -moz-backface-visibility: hidden;
+}
+
+.front,
+.back {
+    width: 100%;
+    height: 100%;
+    border-radius: 1em;
+    position: absolute;
+}
+
+.front {
+    background-color: #FFF0DF;
+    z-index: 2;
+}
+
+.back {
+    z-index: 1;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    background-color: #FF8961;
+}
+
+.card-item:hover .card {
+    transform: rotateY(180deg);
+}
+
+.question, .capital {
     color: #FF900D;
     font-weight: bold;
     text-align: center;
+}
+
+.capital {
+    color: white;
 }
